@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Podstawy HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
       <p><strong>Blokowe:</strong></p>
       <div>block1</div>
       <div>block2</div>
-      <p>
+      <p id="linear">
         <strong>Liniowe:</strong>
         <span>Span1</span>
         <span>Span2</span>
@@ -56,31 +57,35 @@
 
     <section>
       <h2>Osadzanie multimediów</h2>
-      <p>
-        Tutaj znajduje się przykład osadzenia obrazu i wideo na stronie
-        internetowej.
-      </p>
+      <div class="container">
+        <p>
+          Tutaj znajduje się przykład osadzenia obrazu i wideo na stronie
+          internetowej.
+        </p>
+      </div>
 
-      <!-- Osadzenie obrazu -->
-      <figure>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRw5RZAHW85PwL6sZEaCJlwRzf31nq_Yv5cLDoUfdTHwyYShGmhOyhKksxSz0rysrkpTs&usqp=CAU"
-          alt="WSEI Kraków"
-        />
-        <figcaption>Podpis pod obrazem</figcaption>
-      </figure>
+      <div class="figure-container">
+        <!-- Osadzenie obrazu -->
+        <figure>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRw5RZAHW85PwL6sZEaCJlwRzf31nq_Yv5cLDoUfdTHwyYShGmhOyhKksxSz0rysrkpTs&usqp=CAU"
+            alt="WSEI Kraków"
+          />
+          <figcaption>Podpis pod obrazem</figcaption>
+        </figure>
 
-      <!-- Osadzenie wideo -->
-      <figure>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/jJVuyyjHToQ"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-        <figcaption>Pierwsze kroki na WSEI</figcaption>
-      </figure>
+        <!-- Osadzenie wideo -->
+        <figure>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/jJVuyyjHToQ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <figcaption>Pierwsze kroki na WSEI</figcaption>
+        </figure>
+      </div>
     </section>
   </body>
 </html>
