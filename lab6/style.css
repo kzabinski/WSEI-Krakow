@@ -1,7 +1,33 @@
 .color-box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-top: 20px;
 }
 
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  margin-top: 20px;
+  animation: moveRight 3s infinite alternate;
+}
+
+@keyframes moveRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.rotate-box {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  border-radius: 30%;
+  margin-top: 20px;
+  transition: transform 10s;
+}
